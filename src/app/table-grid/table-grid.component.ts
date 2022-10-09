@@ -1,12 +1,13 @@
 import { Component, OnInit } from '@angular/core';
-import { Products } from './app.interface';
+import { Products } from '../app.interface';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  selector: 'app-table-grid',
+  templateUrl: './table-grid.component.html',
+  styleUrls: ['./table-grid.component.scss']
 })
-export class AppComponent implements OnInit {
+export class TableGridComponent implements OnInit {
+
   products: Products[] = [];
 
   constructor() { }

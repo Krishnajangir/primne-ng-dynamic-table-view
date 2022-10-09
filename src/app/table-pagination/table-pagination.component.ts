@@ -1,12 +1,13 @@
 import { Component, OnInit } from '@angular/core';
-import { Products } from './app.interface';
+import { Products } from '../app.interface';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  selector: 'app-table-pagination',
+  templateUrl: './table-pagination.component.html',
+  styleUrls: ['./table-pagination.component.scss']
 })
-export class AppComponent implements OnInit {
+export class TablePaginationComponent implements OnInit {
+
   products: Products[] = [];
 
   constructor() { }
