@@ -1,4 +1,7 @@
-<p-table [value]="products" styleClass="p-datatable-striped" responsiveLayout="scroll">
+<p-table [value]="products" styleClass="p-datatable-gridlines" responsiveLayout="scroll">
+  <ng-template pTemplate="caption">
+    Header
+  </ng-template>
   <ng-template pTemplate="header">
     <tr>
       <th>Code</th>
@@ -15,6 +18,7 @@
       <td>{{product.quantity}}</td>
     </tr>
   </ng-template>
+  <ng-template pTemplate="summary">
+    Footer
+  </ng-template>
 </p-table>
-<app-op-table></app-op-table>
-<app-table-grid></app-table-grid>

@@ -8,10 +8,12 @@ import { RatingModule } from 'primeng/rating';
 import { FormsModule } from '@angular/forms';
 import { ButtonModule } from 'primeng/button';
 import { OpTableComponent } from './op-table/op-table.component';
+import { TableGridComponent } from './table-grid/table-grid.component';
 @NgModule({
   declarations: [
     AppComponent,
-    OpTableComponent
+    OpTableComponent,
+    TableGridComponent
   ],
   imports: [
     BrowserModule,
