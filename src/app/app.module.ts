@@ -9,11 +9,13 @@ import { FormsModule } from '@angular/forms';
 import { ButtonModule } from 'primeng/button';
 import { OpTableComponent } from './op-table/op-table.component';
 import { TableGridComponent } from './table-grid/table-grid.component';
+import { TablePaginationComponent } from './table-pagination/table-pagination.component';
 @NgModule({
   declarations: [
     AppComponent,
     OpTableComponent,
-    TableGridComponent
+    TableGridComponent,
+    TablePaginationComponent
   ],
   imports: [
     BrowserModule,
