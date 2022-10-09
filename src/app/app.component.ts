@@ -8,7 +8,6 @@ import { Products } from './app.interface';
 })
 export class AppComponent implements OnInit {
   products: Products[] = [];
-  cols: any[] = [];
 
   constructor() { }
 
@@ -18,13 +17,6 @@ export class AppComponent implements OnInit {
       { code: 12, name: 'test', category: 'test', quantity: 300, rating: 5 },
       { code: 12, name: 'test', category: 'test', quantity: 300, rating: 6 },
       { code: 12, name: 'test', category: 'test', quantity: 300, rating: 7 },
-    ];
-
-    this.cols = [
-      { field: 'code', header: 'Code' },
-      { field: 'name', header: 'Name' },
-      { field: 'category', header: 'Category' },
-      { field: 'quantity', header: 'Quantity' }
     ];
   }
 }
